@@ -1,0 +1,60 @@
+.content {
+  background-color: white;
+  padding: 0 30px 30px 30px;
+  width: 90%;
+  box-sizing: border-box;
+  max-width: 800px;
+  border-radius: 6px;
+
+  .description {
+    font-size: 1.2em;
+  }
+  
+  .urlInput {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+    outline: none;
+    width: 100%;
+    font-size: 1.5em;
+    padding: 16px 20px;
+    margin-top: 8px;
+    transition-duration: 0.3s;
+
+    &:active,
+    &:focus {
+      border-color: #0065ff;
+    }
+  }
+
+  .submitButton {
+    background-color: #0065ff;
+    opacity: 1;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    margin-top: 16px;
+    padding: 18px 30px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+
+    &:hover,
+    &:active {
+      background-color: #0236b9;
+    }
+
+    &.loading {
+      opacity: 0.6;
+      cursor: no-drop;
+    }
+  }
+  
+  .errorMessage {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 8px;
+    color: #F44336;
+  }
+}

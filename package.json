@@ -1,0 +1,13 @@
+{
+  "name": "url-shorten",
+  "version": "1.0.0",
+  "description": "Fullstack application for shortening link",
+  "author": "Holubiev Dmytro",
+  "scripts": {
+    "start:backend": "cd backend && node app.js",
+    "start:frontend": "cd frontend && npm start",
+    "build:frontend": "cd frontend && npm run build",
+    "install": "cd backend && npm install && cd ../frontend && npm install",
+    "start": "cd frontend && npm run build && cd ../backend && node app.js"
+  }
+}
